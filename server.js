@@ -23,7 +23,7 @@ mongoose
     // this route is protected with token
     app.use("/api/questionary", verifyToken, questionary);
 
-    app.listen(3000, function () {
+    app.listen(process.env.PORT, function () {
       console.log("Listening on 3000");
     });
   });
